@@ -1,0 +1,108 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden</title>
+    <style>
+          .menu {
+    		  text-align: center;
+		  
+   	             }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+ nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #e64a19;
+            overflow: hidden;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #e74c3c;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+ <nav>
+      <ul class="menu">
+        <a href="principal.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+      </ul>
+    </nav>
+    <div class="container">
+        <h1>Ordenar Pizza</h1>
+        <form action="mailto:erickramses30@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion" placeholder="Escribe tu dirección completa" required></textarea>
+
+            <label for="pizza">Tipo de Pizza:</label>
+            <select id="pizza" name="pizza" required>
+                <option value="Mexicana">Mexicana</option>
+                <option value="Especial">Especial</option>
+                <option value="Peperoni">Peperoni</option>
+                <option value="Carnes frias">Carnes frias</option>
+                <option value="Hawaiana">Hawaiana</option>
+                <option value="Vegetariana">Vegetariana</option>
+            </select>
+
+            <label for="notas">Notas Adicionales:</label>
+            <textarea id="notas" name="notas" placeholder="Ejemplo: Sin cebolla, extra queso..."></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+</body>
+</html>
